@@ -13,7 +13,7 @@ Sub Process_Globals
 	'These variables can be accessed from all modules.
 	Dim cc As ContentChooser
 	Dim cf As ContentChooser
-	Dim ad As Timer
+	Dim ad,ad1 As Timer
 End Sub
 
 Sub Globals
@@ -28,15 +28,29 @@ Dim lb As Label
 End Sub
 
 Sub Activity_Create(FirstTime As Boolean)
-	Banner.Initialize("Banner","ca-app-pub-4173348573252986/6440430958")
-	Banner.LoadAd
-	Activity.AddView(Banner,0%x,100%y - 50dip,100%x,50dip)
 	
-	Interstitial.Initialize("Interstitial","ca-app-pub-4173348573252986/7917164153")
+	Activity.Title = "Font2Txj"
+	Banner.Initialize("Banner","ca-app-pub-4173348573252986/5620794951")
+	Dim height As Int
+	If GetDeviceLayoutValues.ApproximateScreenSize < 6 Then
+		'phones
+		If 100%x > 100%y Then height = 32dip Else height = 50dip
+	Else
+		'tablets
+		height = 90dip
+	End If
+	Activity.AddView(Banner, 0dip, 100%y - height, 100%x, height)
+	Banner.LoadAd
+	Log(Banner)
+	
+	Interstitial.Initialize("Interstitial","ca-app-pub-4173348573252986/1050994551")
 	Interstitial.LoadAd
 	
 	ad.Initialize("ad",60000)
 	ad.Enabled = True
+	
+	ad1.Initialize("ad1",100)
+	ad1.Enabled = False
 	
 	Activity.AddMenuItem3("Change Font","change",LoadBitmap(File.DirAssets,"change.png"),True)
 	Activity.AddMenuItem3("Share App","share",LoadBitmap(File.DirAssets,"share.png"),True)
@@ -87,6 +101,7 @@ Sub b3_Click
 	Msgbox("Vivo font file will create a new file name with " &st&".txj in" &CRLF& "sdcard/Vivo Font Maker/Output/","Attention!")
 	
 	zip.ABZipDirectory(sd & "Vivo Font Maker/Project",sd & "Vivo Font Maker/Output/"&st&".txj")
+	ad1.Enabled = True
 	If File.Exists(File.DirRootExternal & "/Vivo Font Maker/Output",st&".txj") = True Then
 		Msgbox(st&".txj file created successfully in"&CRLF&"sdcard/Vivo Font Maker/Output/","Completed!")
 	Else
@@ -135,9 +150,10 @@ Dim p As PhoneIntents
 End Sub
 
 Sub share_Click
+	ad1.Enabled = True
 	Dim ShareIt As Intent
 	copy.clrText
-	copy.setText("You can change easily any font you like into Vivo font (.txj)"&CRLF&"[Features/] "&CRLF&"Font Name!"&CRLF&"Author Name!"&CRLF&"Version!"&CRLF&"Preview Image!"&CRLF&"Note: You can convert TrueType Font(.ttf) To .txj only!!!"&CRLF&"( Other font extension Not working, eg: otf,woff,ofm,eot)"&CRLF&"Download Free at here : https://goo.gl/CejMrm")
+	copy.setText("You can change easily any font you like into Vivo font (.txj)"&CRLF&"[Features/] "&CRLF&"Font Name!"&CRLF&"Author Name!"&CRLF&"Version!"&CRLF&"Preview Image!"&CRLF&"Note: You can convert TrueType Font(.ttf) To .txj only!!!"&CRLF&"( Other font extension Not working, eg: otf,woff,ofm,eot)"&CRLF&"Download Free at here : http://www.htetznaing.com/search?q=Vivo+Font+Maker")
 	ShareIt.Initialize (ShareIt.ACTION_SEND,"")
 	ShareIt.SetType ("text/plain")
 	ShareIt.PutExtra ("android.intent.extra.TEXT",copy.getText)
@@ -152,4 +168,9 @@ End Sub
 
 Sub ad_Tick
 	If Interstitial.Ready Then Interstitial.Show
+End Sub
+
+Sub ad1_Tick
+	If Interstitial.Ready Then Interstitial.Show
+	ad1.Enabled = False
 End Sub

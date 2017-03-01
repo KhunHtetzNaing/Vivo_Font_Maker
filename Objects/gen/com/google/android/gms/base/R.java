@@ -106,29 +106,30 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int common_google_signin_btn_text_light_disabled=0x7f030005;
         public static final int common_google_signin_btn_text_light_focused=0x7f030006;
         public static final int common_google_signin_btn_text_light_pressed=0x7f030007;
+        public static final int common_google_signin_btn_tint=0x7f03000a;
     }
     public static final class drawable {
         public static final int common_full_open_on_phone=0x7f020000;
         public static final int common_google_signin_btn_icon_dark=0x7f020001;
-        public static final int common_google_signin_btn_icon_dark_disabled=0x7f020002;
-        public static final int common_google_signin_btn_icon_dark_focused=0x7f020003;
-        public static final int common_google_signin_btn_icon_dark_normal=0x7f020004;
-        public static final int common_google_signin_btn_icon_dark_pressed=0x7f020005;
+        public static final int common_google_signin_btn_icon_dark_focused=0x7f020002;
+        public static final int common_google_signin_btn_icon_dark_normal=0x7f020003;
+        public static final int common_google_signin_btn_icon_dark_normal_background=0x7f020004;
+        public static final int common_google_signin_btn_icon_disabled=0x7f020005;
         public static final int common_google_signin_btn_icon_light=0x7f020006;
-        public static final int common_google_signin_btn_icon_light_disabled=0x7f020007;
-        public static final int common_google_signin_btn_icon_light_focused=0x7f020008;
-        public static final int common_google_signin_btn_icon_light_normal=0x7f020009;
-        public static final int common_google_signin_btn_icon_light_pressed=0x7f02000a;
-        public static final int common_google_signin_btn_text_dark=0x7f02000b;
-        public static final int common_google_signin_btn_text_dark_disabled=0x7f02000c;
-        public static final int common_google_signin_btn_text_dark_focused=0x7f02000d;
-        public static final int common_google_signin_btn_text_dark_normal=0x7f02000e;
-        public static final int common_google_signin_btn_text_dark_pressed=0x7f02000f;
-        public static final int common_google_signin_btn_text_light=0x7f020010;
-        public static final int common_google_signin_btn_text_light_disabled=0x7f020011;
-        public static final int common_google_signin_btn_text_light_focused=0x7f020012;
-        public static final int common_google_signin_btn_text_light_normal=0x7f020013;
-        public static final int common_google_signin_btn_text_light_pressed=0x7f020014;
+        public static final int common_google_signin_btn_icon_light_focused=0x7f020007;
+        public static final int common_google_signin_btn_icon_light_normal=0x7f020008;
+        public static final int common_google_signin_btn_icon_light_normal_background=0x7f020009;
+        public static final int common_google_signin_btn_text_dark=0x7f02000a;
+        public static final int common_google_signin_btn_text_dark_focused=0x7f02000b;
+        public static final int common_google_signin_btn_text_dark_normal=0x7f02000c;
+        public static final int common_google_signin_btn_text_dark_normal_background=0x7f02000d;
+        public static final int common_google_signin_btn_text_disabled=0x7f02000e;
+        public static final int common_google_signin_btn_text_light=0x7f02000f;
+        public static final int common_google_signin_btn_text_light_focused=0x7f020010;
+        public static final int common_google_signin_btn_text_light_normal=0x7f020011;
+        public static final int common_google_signin_btn_text_light_normal_background=0x7f020012;
+        public static final int googleg_disabled_color_18=0x7f020013;
+        public static final int googleg_standard_color_18=0x7f020014;
         public static final int icon=0x7f020015;
     }
     public static final class id {
@@ -184,9 +185,9 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #AdsAttrs_adSize com.htetznaing.vivofontmaker:adSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #AdsAttrs_adSizes com.htetznaing.vivofontmaker:adSizes}</code></td><td></td></tr>
-           <tr><td><code>{@link #AdsAttrs_adUnitId com.htetznaing.vivofontmaker:adUnitId}</code></td><td></td></tr>
+           <tr><td><code>{@link #AdsAttrs_adSize com.htetznaing.vivofontmaker2:adSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #AdsAttrs_adSizes com.htetznaing.vivofontmaker2:adSizes}</code></td><td></td></tr>
+           <tr><td><code>{@link #AdsAttrs_adUnitId com.htetznaing.vivofontmaker2:adUnitId}</code></td><td></td></tr>
            </table>
            @see #AdsAttrs_adSize
            @see #AdsAttrs_adSizes
@@ -196,7 +197,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010006, 0x7f010007, 0x7f010008
         };
         /**
-          <p>This symbol is the offset where the {@link com.htetznaing.vivofontmaker.R.attr#adSize}
+          <p>This symbol is the offset where the {@link com.htetznaing.vivofontmaker2.R.attr#adSize}
           attribute's value can be found in the {@link #AdsAttrs} array.
 
 
@@ -206,11 +207,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.htetznaing.vivofontmaker:adSize
+          @attr name com.htetznaing.vivofontmaker2:adSize
         */
         public static final int AdsAttrs_adSize = 0;
         /**
-          <p>This symbol is the offset where the {@link com.htetznaing.vivofontmaker.R.attr#adSizes}
+          <p>This symbol is the offset where the {@link com.htetznaing.vivofontmaker2.R.attr#adSizes}
           attribute's value can be found in the {@link #AdsAttrs} array.
 
 
@@ -220,11 +221,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.htetznaing.vivofontmaker:adSizes
+          @attr name com.htetznaing.vivofontmaker2:adSizes
         */
         public static final int AdsAttrs_adSizes = 1;
         /**
-          <p>This symbol is the offset where the {@link com.htetznaing.vivofontmaker.R.attr#adUnitId}
+          <p>This symbol is the offset where the {@link com.htetznaing.vivofontmaker2.R.attr#adUnitId}
           attribute's value can be found in the {@link #AdsAttrs} array.
 
 
@@ -234,7 +235,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.htetznaing.vivofontmaker:adUnitId
+          @attr name com.htetznaing.vivofontmaker2:adUnitId
         */
         public static final int AdsAttrs_adUnitId = 2;
         /** Attributes that can be used with a LoadingImageView.
@@ -243,9 +244,9 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #LoadingImageView_circleCrop com.htetznaing.vivofontmaker:circleCrop}</code></td><td></td></tr>
-           <tr><td><code>{@link #LoadingImageView_imageAspectRatio com.htetznaing.vivofontmaker:imageAspectRatio}</code></td><td></td></tr>
-           <tr><td><code>{@link #LoadingImageView_imageAspectRatioAdjust com.htetznaing.vivofontmaker:imageAspectRatioAdjust}</code></td><td></td></tr>
+           <tr><td><code>{@link #LoadingImageView_circleCrop com.htetznaing.vivofontmaker2:circleCrop}</code></td><td></td></tr>
+           <tr><td><code>{@link #LoadingImageView_imageAspectRatio com.htetznaing.vivofontmaker2:imageAspectRatio}</code></td><td></td></tr>
+           <tr><td><code>{@link #LoadingImageView_imageAspectRatioAdjust com.htetznaing.vivofontmaker2:imageAspectRatioAdjust}</code></td><td></td></tr>
            </table>
            @see #LoadingImageView_circleCrop
            @see #LoadingImageView_imageAspectRatio
@@ -255,7 +256,7 @@ containing a value of this type.
             0x7f010000, 0x7f010001, 0x7f010002
         };
         /**
-          <p>This symbol is the offset where the {@link com.htetznaing.vivofontmaker.R.attr#circleCrop}
+          <p>This symbol is the offset where the {@link com.htetznaing.vivofontmaker2.R.attr#circleCrop}
           attribute's value can be found in the {@link #LoadingImageView} array.
 
 
@@ -265,11 +266,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.htetznaing.vivofontmaker:circleCrop
+          @attr name com.htetznaing.vivofontmaker2:circleCrop
         */
         public static final int LoadingImageView_circleCrop = 2;
         /**
-          <p>This symbol is the offset where the {@link com.htetznaing.vivofontmaker.R.attr#imageAspectRatio}
+          <p>This symbol is the offset where the {@link com.htetznaing.vivofontmaker2.R.attr#imageAspectRatio}
           attribute's value can be found in the {@link #LoadingImageView} array.
 
 
@@ -279,11 +280,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.htetznaing.vivofontmaker:imageAspectRatio
+          @attr name com.htetznaing.vivofontmaker2:imageAspectRatio
         */
         public static final int LoadingImageView_imageAspectRatio = 1;
         /**
-          <p>This symbol is the offset where the {@link com.htetznaing.vivofontmaker.R.attr#imageAspectRatioAdjust}
+          <p>This symbol is the offset where the {@link com.htetznaing.vivofontmaker2.R.attr#imageAspectRatioAdjust}
           attribute's value can be found in the {@link #LoadingImageView} array.
 
 
@@ -297,7 +298,7 @@ containing a value of this type.
 <tr><td><code>adjust_width</code></td><td>1</td><td></td></tr>
 <tr><td><code>adjust_height</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name com.htetznaing.vivofontmaker:imageAspectRatioAdjust
+          @attr name com.htetznaing.vivofontmaker2:imageAspectRatioAdjust
         */
         public static final int LoadingImageView_imageAspectRatioAdjust = 0;
         /** Attributes that can be used with a SignInButton.
@@ -306,9 +307,9 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #SignInButton_buttonSize com.htetznaing.vivofontmaker:buttonSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #SignInButton_colorScheme com.htetznaing.vivofontmaker:colorScheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #SignInButton_scopeUris com.htetznaing.vivofontmaker:scopeUris}</code></td><td></td></tr>
+           <tr><td><code>{@link #SignInButton_buttonSize com.htetznaing.vivofontmaker2:buttonSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #SignInButton_colorScheme com.htetznaing.vivofontmaker2:colorScheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #SignInButton_scopeUris com.htetznaing.vivofontmaker2:scopeUris}</code></td><td></td></tr>
            </table>
            @see #SignInButton_buttonSize
            @see #SignInButton_colorScheme
@@ -318,7 +319,7 @@ containing a value of this type.
             0x7f010003, 0x7f010004, 0x7f010005
         };
         /**
-          <p>This symbol is the offset where the {@link com.htetznaing.vivofontmaker.R.attr#buttonSize}
+          <p>This symbol is the offset where the {@link com.htetznaing.vivofontmaker2.R.attr#buttonSize}
           attribute's value can be found in the {@link #SignInButton} array.
 
 
@@ -334,11 +335,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>wide</code></td><td>1</td><td></td></tr>
 <tr><td><code>icon_only</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name com.htetznaing.vivofontmaker:buttonSize
+          @attr name com.htetznaing.vivofontmaker2:buttonSize
         */
         public static final int SignInButton_buttonSize = 0;
         /**
-          <p>This symbol is the offset where the {@link com.htetznaing.vivofontmaker.R.attr#colorScheme}
+          <p>This symbol is the offset where the {@link com.htetznaing.vivofontmaker2.R.attr#colorScheme}
           attribute's value can be found in the {@link #SignInButton} array.
 
 
@@ -354,18 +355,18 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>light</code></td><td>1</td><td></td></tr>
 <tr><td><code>auto</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name com.htetznaing.vivofontmaker:colorScheme
+          @attr name com.htetznaing.vivofontmaker2:colorScheme
         */
         public static final int SignInButton_colorScheme = 1;
         /**
-          <p>This symbol is the offset where the {@link com.htetznaing.vivofontmaker.R.attr#scopeUris}
+          <p>This symbol is the offset where the {@link com.htetznaing.vivofontmaker2.R.attr#scopeUris}
           attribute's value can be found in the {@link #SignInButton} array.
 
 
           <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
-          @attr name com.htetznaing.vivofontmaker:scopeUris
+          @attr name com.htetznaing.vivofontmaker2:scopeUris
         */
         public static final int SignInButton_scopeUris = 2;
     };

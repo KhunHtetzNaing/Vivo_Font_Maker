@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest
 	xmlns:android="http://schemas.android.com/apk/res/android"
-	package="com.htetznaing.vivofontmaker"
-	android:versionCode="1"
-	android:versionName="1.0"
+	package="com.htetznaing.vivofontmaker2"
+	android:versionCode="2"
+	android:versionName="1.1"
 	android:installLocation="internalOnly">
 	
 	<uses-sdk android:minSdkVersion="5" android:targetSdkVersion="19"/>
@@ -16,7 +16,7 @@
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 	<application
 		android:icon="@drawable/icon"
-		android:label="Vivo Font Maker (Font2TXJ)">
+		android:label="Vivo Font Maker (Font2Txj)">
 		
 		<activity android:name="com.google.android.gms.common.api.GoogleApiActivity"
 		  android:theme="@android:style/Theme.Translucent.NoTitleBar"
@@ -34,7 +34,7 @@
 			android:windowSoftInputMode="stateHidden"
 			android:launchMode="singleTop"
 			android:name=".main"
-			android:label="Vivo Font Maker (Font2TXJ)"
+			android:label="Vivo Font Maker (Font2Txj)"
 			android:screenOrientation="unspecified">
 			<intent-filter>
 			   <action android:name="android.intent.action.MAIN" />
@@ -46,7 +46,7 @@
 			android:windowSoftInputMode="stateHidden"
 			android:launchMode="singleTop"
 			android:name=".main2"
-			android:label="Vivo Font Maker (Font2TXJ)"
+			android:label="Vivo Font Maker (Font2Txj)"
 			android:screenOrientation="unspecified">
 		</activity>
 	</application>
